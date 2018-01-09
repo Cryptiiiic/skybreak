@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Headers/IOKit/IOKitKeys.h">
+   </FileRef>
+   <FileRef
+      location = "group:../Headers/IOKit/IOKitLib.h">
+   </FileRef>
+   <FileRef
+      location = "group:../Headers/IOKit/iokitmig.h">
+   </FileRef>
+   <FileRef
+      location = "group:../Headers/IOKit/IOReturn.h">
+   </FileRef>
+   <FileRef
+      location = "group:../Headers/IOKit/IOTypes.h">
+   </FileRef>
+   <FileRef
+      location = "group:../Headers/IOKit/OSMessageNotification.h">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>

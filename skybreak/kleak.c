@@ -3,12 +3,14 @@
 //  skybreak
 //
 //  Created by Cryptic on 1/8/18.
+//  Updated by Cryptic on 9/11/18
 //  Copyright © 2018 Cryptic. All rights reserved.
 //
 
 #include <mach/mach.h>
 #include <IOKit/IOKitLib.h>
 #include <IOKit/iokitmig.h>
+#include <stdio.h>
 
 enum
 {
@@ -57,10 +59,11 @@ unsigned int get_kslide()
     
     if (kern_ret == KERN_SUCCESS)
     {
-        
+        printf("Dictionary is valid");
     }
     else
     {
+        printf("Error: Dictionary is invalid");
         return -1;
     }
     
@@ -70,10 +73,11 @@ unsigned int get_kslide()
     
     if (kern_ret == KERN_SUCCESS)
     {
-        
+        printf("UserClient spawned successfully");
     }
     else
     {
+        printf("Error: UserClient failed with: %d", kern_err);
         return -1;
     }
     

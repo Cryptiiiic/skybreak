@@ -3,10 +3,11 @@
 //  skybreak
 //
 //  Created by Cryptic on 1/8/18.
-//  Copyright © 2018 Cryptic. All rights reserved.
+//  Copyright © 2019 Cryptic. All rights reserved.
 //
 
 #import "ViewController.h"
+#include "exploit.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *KSlide;
@@ -15,20 +16,18 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    unsigned long long kslide = get_kslide();
-    NSString *text = [NSString stringWithFormat:@"0x%qX", kslide];
+    NSString *text = [NSString stringWithFormat:@"0x%X", get_kslide()];
     _KSlide.text = text;
-    // Do any additional setup after loading the view, typically from a nib.
 }
     
 
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
-
 
 @end
